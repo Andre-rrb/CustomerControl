@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "s0X6KbowMPFQxUSAEOBfvH9zxKKLvUAqndh8ZMwXbC4=",
+  "Source": "CustomerControl",
+  "BasePath": "_content/CustomerControl",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
