@@ -1,3 +1,4 @@
 namespace CustomerControl.Models;
 
-public record CostumerRequest(string name);
+public record CostumerRequest(string name, string address, string phone);
+

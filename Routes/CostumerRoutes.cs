@@ -13,7 +13,7 @@ public static class CostumerRoutes
         route.MapPost("", 
             async (CostumerRequest req, CostumerContext context) =>
         {
-            var person = new CostumerModel(req.name);
+            var person = new CostumerModel(req.name, req.address, req.phone);
             await context.AddAsync(person);
             await context.SaveChangesAsync();
         });
@@ -29,7 +29,7 @@ public static class CostumerRoutes
             var person = await context.Peolpe.FirstOrDefaultAsync(p => p.Id == id);
             if (person == null)
                 return Results.NotFound();
-            person.ChangeName(req.name);
+            person.ChangePerson(req.name, req.address, req.phone);
             await context.SaveChangesAsync();
             
             return Results.Ok(person);
