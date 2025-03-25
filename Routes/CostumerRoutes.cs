@@ -13,7 +13,10 @@ public static class CostumerRoutes
         route.MapPost("", 
             async (CostumerRequest req, CostumerContext context) =>
         {
+
             var person = new CostumerModel(req.name, req.address, req.nugget);
+
+
             await context.AddAsync(person);
             await context.SaveChangesAsync();
         });
